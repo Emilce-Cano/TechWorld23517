@@ -1,0 +1,36 @@
+.cabecera {
+    background-color: #0556B5;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-simple ul {
+    background: rgba(87, 202, 227, 1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.menu-simple ul a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    padding: .6em;
+}
+
+.menu-simple ul a:hover {
+    background-color: rgb(143, 219, 236);
+}
+
+/* Iniciamos Flexbox */
+.menu-simple ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-simple li {
+    flex: 1 0 auto;
+    text-align: center;
+}
