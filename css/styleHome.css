@@ -1,0 +1,140 @@
+body {
+    background-image: url(../img/Rectangle\ 8.png);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#0556B5 ;
+    width: 2670px;
+    height: 200px;
+}
+
+#title {
+    color: #FFF;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    
+
+}
+#title {
+    /* display: inline-block; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+#logo {
+    
+     width: 130px;
+    height: 130px;
+    /* float: left; */
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen del logo */
+    margin-right: 30px;
+    /* display: inline-block; */
+    
+
+}
+
+#botonera_principal {
+    width: 2670px;
+    background-color: #57CAE3;
+    /* text-align: center; */
+    height: 60px;
+}
+
+#botonera_principal ul {
+    background-color:#57CAE3;
+    list-style: none;
+    /* Quita los marcadores de lista */
+    padding: 015px;
+    margin: 0;
+    
+    width: 100%;
+    
+   
+}
+
+#botonera_principal ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#botonera_principal ul li a {
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+     background-color: #57CAE3;
+    color: #FFF;   
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    margin: 130px;
+    padding: 15px;
+}
+
+#botonera_principal ul li a {
+    display: inline;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    
+}
+
+#botonera_principal ul li a:hover {
+    color: #FFF;
+    background-color: rgb(8, 115, 202);
+}
+
+#datos {
+    color: #FFF;
+    background-color: #0556B5;
+    width: 600px;
+    height: 141px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    /* flex-shrink: 0; */
+}
+
+footer {
+    
+    display: flex;
+    align-items: center;
+    
+    width: 2670px;
+    height: 350px;
+    background-color: #0556B5;
+    
+}
+
+#botonera_principal2 {
+    float: right;
+    background-color: #0556B5;
+    width: 0px;
+    height: 280px;
+    margin-top: 50px;
+
+}
+
+#botonera_principal2 nav ul li a {
+    color: #FFF;
+    font-family: 'Copse', serif;
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+ 
+nav ul {
+    /* quita los marcadores alñ costado de los navegadores */
+    list-style: none; 
+    margin-bottom: 100px;
+}
+
