@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="teachworld">TeachWorld</title>
+    <link rel="stylesheet" href="../css/stylecontact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Fugaz+One&family=Inter:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../img/Logo.png" alt="logo">
+        <h1 id="title">TEACH WORLD</h1>
+    </header>
+    <nav id="botonera_principal">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="formulario_contacto">
+        <div id="formulario">
+            <h1>Solicitar informacion</h1>
+
+            <form action="procesar_consulta.php" method="post"></form>
+            <!--el fieldset funsiona para recuadrar el formulario-->
+            <fieldset>
+                <legend id="datos_personales"><b>Datos personales</b></legend>
+                <p>Nombre:</p>
+                <!--label es una etiqueta y el imput es lo que tenga que ver con el label, me sirve para llenar el form-->
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" mrequired maxlength="10">
+                <p>Apellido:</p>
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" required>
+
+                <p>E-mail:</p>
+                <label for="email"></label>
+                <input type="email" name="email" id="email"
+                    pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/">
+
+                <p>Tel:</p>
+                <!--el input me da como la forma de validar mi campo el for es como mi id para el input type.-->
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" min="8" max="15">
+                <br><br>
+                <label id="sexo" for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="noBinario">No Binario</option>
+                </select><br><br>
+
+                <legend><b>Consulta:</b></legend>
+                <br>
+                <label for="obs"></label>
+                <textarea name="obs" id="obs" cols="40" rows="10" placeholder="..."></textarea>
+
+            </fieldset>
+            <br>
+            <!--en enviar tendria que mandar la info en un servidor-->
+            <button type="submit"><b>Enviar</b></button><br><br>
+
+        </div>
+    </section>
+    <br><br>
+    <footer>
+
+        <div id="datos">
+            <p><b>Tel:</b> 011 3949-3050</p>
+            <p><b>Direccion: </b>Av. siempre viva 1234</p>
+            <p>Terminos y condiciones</p>
+            <p>Politicas de privacidad</p>
+        </div>
+<div id="botonera_principal2">
+                <nav >
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Testimonios</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    </footer>
+
+</body>
+
+</html>
