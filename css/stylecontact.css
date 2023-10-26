@@ -12,7 +12,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     background-color:#0556B5 ;
-    width: 2670px;
+    width: 2631px;
     height: 200px;
 }
 
@@ -22,70 +22,81 @@ header {
     font-size: 70px;
     font-style: normal;
     font-weight: 400;
-    
-
 }
+
 #title {
-    /* display: inline-block; */
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
 #logo {
-    
      width: 130px;
     height: 130px;
     /* float: left; */
     max-width: 200px; /* Ajusta el ancho máximo de la imagen del logo */
     margin-right: 30px;
     /* display: inline-block; */
-    
-
 }
 
 #botonera_principal {
-    width: 2670px;
+    margin: 0 auto;
+    padding: 0 1em;
+    /* width: 2670px;
     background-color: #57CAE3;
     /* text-align: center; */
-    height: 60px;
+    /*height: 30px;
+    padding-bottom: 2em;
+    margin-bottom: 2em; */
+    border-bottom: 0px solid #57CAE3;
 }
 
+@media screen and(min-width: 52em) {
+   #botonera_principal {
+    max-width: 100em;
+   } 
+ }/* fin media */
+
+ .menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+ }
+
+
+
 #botonera_principal ul {
-    background-color:#57CAE3;
-    list-style: none;
+    background:#57CAE3;
+    list-style-type: none;
     /* Quita los marcadores de lista */
-    padding: 015px;
-    margin: 0;
-    
-    width: 100%;
-    
-   
+    padding: 0;
+    margin: 0;  
 }
 
 #botonera_principal ul li {
-    display: inline;
-    margin: 0 20px;
+    /* display: block; */
+    /* margin: 0 20px; */
 }
 
-#botonera_principal ul li a {
+#botonera_principal ul a {
     font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
     font-size: 25px;
-     background-color: #57CAE3;
+     /* background-color: #57CAE3; */
     color: #FFF;   
     font-weight: bold;
     text-decoration: none;
     font-style: normal;
-    margin: 130px;
-    padding: 15px;
+    /* margin: 130px;
+    padding: 15px; */
 }
 
 #botonera_principal ul li a {
-    display: inline;
-    width: 150px;
-    height: 30px;
-    text-align: center;
+    display: block;
+    /* width: 150px;
+    height: 30px; */
+    /* text-align: center; */
+    /* .6em es arriba abajo 1 em es izq y der */
+    padding: .8em 5em;
     
 }
 
@@ -94,9 +105,27 @@ header {
     background-color: rgb(8, 115, 202);
 }
 
+
+
+
+/* iniciamos el flexbox */
+
+#botonera_principal ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#botonera_principal li {
+    flex: 1 0 auto;
+    text-align: center;
+
+}
+
 #formulario_contacto {
     padding: 10px;
 }
+
 h1 {
     font-size: 35px;
     font-family: 'Copse', serif;
@@ -159,6 +188,10 @@ textarea {
     padding: 5px;
     /* Espacio interno alrededor del campo de entrada */
 }
+
+input:focus {
+    background: #b7dee8;
+}
  button {
     color: #e8edf3;
     background-color: #3c8de9cc;
@@ -168,10 +201,33 @@ textarea {
     width: 250px;
     height: 50px;
     margin-left: 300px;
-    
+     cursor: pointer;
+    transition: background-color 0.3s, color 0.5s;
+ }
+button:hover {
+    background-color: #0d2b49;
+    color: #fff;
+}
+ #mapa {
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    margin-top: 90px;
+ }
+
+ #mapa legend {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Copse', serif;
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Inter', sans-serif;
  }
 
 #datos {
+    flex: 1;
     color: #FFF;
     background-color: #0556B5;
     width: 600px;
@@ -182,16 +238,16 @@ textarea {
 }
 
 footer {
-    
     display: flex;
     align-items: center;
     width: 2700px;
     height: 350px;
     background-color: #0556B5;
-    
+    justify-content: space-between;
 }
 
 #botonera_principal2 {
+    flex: 1;
     float: right;
     background-color: #0556B5;
     width: 0px;
@@ -214,7 +270,23 @@ nav ul {
     margin-bottom: 100px;
 }
 
+.social {
+    flex: 1;
+    color: #ccc;
+    font-size: 50px;
+}
 
+@media screen and(min-width: 52em) {
+    #botonera_principal {
+        max-width: 52em;
+    }
+}
+/* se inicia con flexbox */
+#botonera_principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 
