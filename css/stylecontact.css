@@ -1,6 +1,8 @@
 body {
     background-image: url(../img/Rectangle\ 8.png);
     margin: 0;
+    background-color: #fff;
+    background-size: cover;
 }
 
 header {
@@ -11,82 +13,71 @@ header {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color:#0556B5 ;
-    width: 2670px;
+    background-color: #0556B5;
     height: 200px;
 }
 
 #title {
     color: #FFF;
     font-family: 'Fugaz One', sans-serif;
-    font-size: 70px;
-    font-style: normal;
+    font-size: 5rem;
     font-weight: 400;
-    
-
-}
-#title {
-    /* display: inline-block; */
     margin: 0;
     padding: 0;
-    
 }
 
-#logo {
-    
-     width: 130px;
-    height: 130px;
-    /* float: left; */
-    max-width: 200px; /* Ajusta el ancho máximo de la imagen del logo */
-    margin-right: 30px;
-    /* display: inline-block; */
-    
 
+#logo {
+    width: 130px;
+    height: 130px;
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la imagen del logo */
+    margin-right: 30px;
 }
 
 #botonera_principal {
-    width: 2670px;
-    background-color: #57CAE3;
-    /* text-align: center; */
-    height: 60px;
+    margin: 0 auto;
+    padding: 0 1em;
+    border-bottom: 0px solid #57CAE3;
 }
+
+@media screen and(min-width: 52em) {
+    #botonera_principal {
+        max-width: 100em;
+    }
+}
+
+/* fin media */
+
+.menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+}
+
+
 
 #botonera_principal ul {
-    background-color:#57CAE3;
-    list-style: none;
+    background: #57CAE3;
+    list-style-type: none;
     /* Quita los marcadores de lista */
-    padding: 015px;
+    padding: 0;
     margin: 0;
-    
-    width: 100%;
-    
-   
 }
 
-#botonera_principal ul li {
-    display: inline;
-    margin: 0 20px;
-}
 
-#botonera_principal ul li a {
-    font-family: 'Fugaz One', sans-serif;
+#botonera_principal ul a {
     font-family: 'Inter', sans-serif;
     font-size: 25px;
-     background-color: #57CAE3;
-    color: #FFF;   
+    color: #FFF;
     font-weight: bold;
     text-decoration: none;
-    font-style: normal;
-    margin: 130px;
-    padding: 15px;
+    padding: 0.8em 5em;
 }
 
 #botonera_principal ul li a {
-    display: inline;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    
+    display: block;
+
 }
 
 #botonera_principal ul li a:hover {
@@ -94,32 +85,47 @@ header {
     background-color: rgb(8, 115, 202);
 }
 
+
+
+
+/* iniciamos el flexbox */
+
+#botonera_principal ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#botonera_principal li {
+    flex: 1 0 auto;
+    text-align: center;
+
+}
+
 #formulario_contacto {
     padding: 10px;
 }
+
 h1 {
     font-size: 35px;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 #datos_personales {
     font-size: 30px;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 p {
     font-size: 25px;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 fieldset {
-    max-width: 600px;
+    max-width: 45%;
     border: 1px solid #ccc;
     /* Establece un borde claro */
     padding: 10px;
@@ -129,28 +135,27 @@ fieldset {
 }
 
 input {
-    width: 100px;
+    width: 100%;
     height: 40px;
     font-size: 25px;
 }
 
 legend {
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 30px;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 #sexo {
     font-size: 25px;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
 }
 
 input,
 textarea {
-    width: 1000px;
+    width: 90%;
     height: 150xp;
     font-size: 25px;
     background-color: rgba(218, 213, 213, 0.377);
@@ -159,7 +164,12 @@ textarea {
     padding: 5px;
     /* Espacio interno alrededor del campo de entrada */
 }
- button {
+
+input:focus {
+    background: #b7dee8;
+}
+
+button {
     color: #e8edf3;
     background-color: #3c8de9cc;
     border: 1px solid #1d7ce9;
@@ -167,33 +177,65 @@ textarea {
     border-radius: 10px;
     width: 250px;
     height: 50px;
-    margin-left: 300px;
-    
- }
+    margin-left: 50%;
+    /*  para alinearlo al centro */
+    cursor: pointer;
 
-#datos {
-    color: #FFF;
-    background-color: #0556B5;
-    width: 600px;
-    height: 141px;
-    padding-left: 30px;
-    margin-bottom: 100px;
-    /* flex-shrink: 0; */
+}
+
+button:hover {
+    background-color: #0d2b49;
+    color: #fff;
+}
+
+#error{
+    color: rgb(224, 15, 15);
+    font-size: 25px;
+}
+.mapa {
+    /* display: flex; */
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    margin-top: 90px;
+}
+
+#mapa legend {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Copse', serif;
+    font-family: 'Inter', sans-serif;
+}
+
+#map {
+    width: 900px;
+    height: 700px;
 }
 
 footer {
-    
     display: flex;
     align-items: center;
-    width: 2700px;
+
     height: 350px;
     background-color: #0556B5;
-    
+    justify-content: space-between;
 }
 
+#datos {
+    flex: 1;
+    color: #FFF;
+    width: 300px;
+    height: 141px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+
+
 #botonera_principal2 {
-    float: right;
-    background-color: #0556B5;
+    flex: 1;
+    /* float: right; */
     width: 0px;
     height: 280px;
     margin-top: 50px;
@@ -203,15 +245,33 @@ footer {
 #botonera_principal2 nav ul li a {
     color: #FFF;
     font-family: 'Copse', serif;
-    font-family: 'Fugaz One', sans-serif;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
 }
- 
+
 nav ul {
-    /* quita los marcadores alñ costado de los navegadores */
-    list-style: none; 
+    /* quita los marcadores al costado de los navegadores */
+    list-style: none;
     margin-bottom: 100px;
+}
+
+.social {
+    flex: 1;
+    color: #ccc;
+    font-size: 50px;
+}
+
+@media screen and(min-width: 52em) {
+    #botonera_principal {
+        max-width: 52em;
+    }
+}
+
+/* se inicia con flexbox */
+#botonera_principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -223,9 +283,355 @@ nav ul {
 
 
 
+/* Empieza media tablet */
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+    /* Ajustes para headers */
+    header {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
+    }
+
+    #botonera_principal ul li {
+        margin: 0 10px;
+    }
+
+    #botonera_principal ul li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    fieldset {
+        max-width: 900px;
+        border: 1px solid #ccc;
+        /* Establece un borde claro */
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        height: 150xp;
+    }
+
+
+    button {
+        width: 250px;
+        height: auto;
+        margin-left: 50%;
+    }
+
+    #formulario {
+        width: 100%;
+    }
+
+    .mapa {
+        margin-top: 20px;
+        width: 100%;
+
+
+    }
+
+    #mapa {
+        display: flex;
+        float: none;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-top: 0px;
+    }
+
+    /* Ajustes para footer */
+    footer {
+        margin-top: auto;
+        display: flex;
+        padding: 10px;
+    }
+
+    #datos {
+        width: 300px;
+        height: 141px;
+        padding-left: 30px;
+        margin-bottom: 100px;
+    }
+
+    #botonera_principal2 {
+        float: right;
+        width: 0px;
+        height: 280px;
+        margin-top: 50px;
+    }
+
+    #botonera_principal2 nav ul li a {
+        font-size: 30px;
+    }
+
+    nav ul {
+        margin-bottom: 100px;
+    }
+
+    .social {
+        font-size: 50px;
+    }
+}
+
+/* fin de media tablet */
 
 
 
 
 
 
+
+
+
+
+
+/* Empieza media mobil */
+@media all and (max-width: 599px) {
+    header {
+        display: block;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    #title {
+        width: 90%;
+       font-size: 15px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-position: center
+    }
+    
+    
+    #logo {
+        width: 10%;
+        height: auto;
+        margin: 0;
+        box-sizing: border-box;
+        background-position: center
+    }
+    
+    #botonera_principal {
+        width:100%;
+        height:auto;
+        float:none;
+        margin: 20px;
+        
+       
+    }
+    
+    
+    .menu-section {
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    
+    }
+    
+    
+    
+    #botonera_principal ul {
+        
+    float:none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    #botonera_principal ul a {
+       display: block;
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    /* iniciamos el flexbox */
+    
+    #botonera_principal ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #botonera_principal li {
+        flex: 1 0 auto;
+        text-align: center;
+    
+    }
+    
+    #formulario_contacto {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 35px;
+        
+    }
+    
+    #datos_personales {
+        font-size: 30px;
+        
+    }
+    
+    p {
+        font-size: 90%;
+      
+    }
+    
+    fieldset {
+        max-width: 45%;
+       
+        /* Establece un borde claro */
+        padding: 10px;
+        /* Espacio interno para separar el contenido del borde */
+       }
+    
+    input {
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+    }
+    
+    legend {
+       
+        font-size: 30px;
+        
+    }
+    
+    #sexo {
+        font-size: 25px;
+       
+    }
+    
+    input,
+    textarea {
+        width: 90%;
+        height: 150xp;
+        font-size: 25px;
+        
+        
+        padding: 5px;
+        /* Espacio interno alrededor del campo de entrada */
+    }
+    
+    
+    
+    button {
+        
+        font-size: 25px;
+        border-radius: 10px;
+        width: 250px;
+        height: 50px;
+        margin-left: 50%;
+        /*  para alinearlo al centro */
+        cursor: pointer;
+    
+    }
+    
+  
+    
+    
+    
+    .mapa {
+        /* display: flex; */
+        float: right;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 50%;
+        margin-top: 90px;
+    }
+    
+    #mapa legend {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Copse', serif;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    #map {
+        width: 900px;
+        height: 700px;
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+    
+        height: 350px;
+        background-color: #0556B5;
+        justify-content: space-between;
+    }
+    
+    #datos {
+        flex: 1;
+        color: #FFF;
+        width: 300px;
+        height: 141px;
+        padding-left: 30px;
+        margin-bottom: 100px;
+    }
+    
+    #botonera_principal2 {
+        flex: 1;
+        /* float: right; */
+        width: 0px;
+        height: 280px;
+        margin-top: 50px;
+    
+    }
+    
+    #botonera_principal2 nav ul li a {
+        color: #FFF;
+        font-family: 'Copse', serif;
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+    }
+    
+    nav ul {
+        /* quita los marcadores alñ costado de los navegadores */
+        list-style: none;
+        margin-bottom: 100px;
+    }
+    
+    .social {
+        flex: 1;
+        color: #ccc;
+        font-size: 50px;
+    }
+    
+    @media screen and(min-width: 52em) {
+        #botonera_principal {
+            max-width: 52em;
+        }
+    }
+    
+    /* se inicia con flexbox */
+    #botonera_principal ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+}
