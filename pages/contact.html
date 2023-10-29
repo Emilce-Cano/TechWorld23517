@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="teachworld">TeachWorld</title>
+    <link rel="stylesheet" href="../css/stylecontact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Fugaz+One&family=Inter:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../icos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icos/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../img/Logo.png" alt="logo">
+        <h1 id="title">TEACH WORLD</h1>
+    </header>
+    <section class="menu-section">
+        <nav id="botonera_principal">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+
+                <li><a href="#">Cursos</a></li>
+                <li><a href="/pages/Testimonios.html">Testimonios</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="mapa">
+        
+            <fieldset class="map_recuadro">
+                <legend>Ubicacion</legend>
+                <div id="map"></div>
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.00450239218!2d-58.38673772505061!3d-34.60404765751429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5dd595589%3A0xcc91d385c40fd71e!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20CABA!5e0!3m2!1ses-419!2sar!4v1698279199671!5m2!1ses-419!2sar"
+                    width="900" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                
+            </fieldset>
+
+        
+    </section>
+    <section id="formulario_contacto">
+        <div id="formulario">
+            <h1>Solicitar informacion</h1>
+
+            <form action="" method="">
+                <fieldset>
+                <legend id="datos_personales"><b>Datos personales</b></legend>
+                <p>Nombre:</p>
+                <!--label es una etiqueta y el imput es lo que tenga que ver con el label, me sirve para llenar el form-->
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" mrequired maxlength="10">
+                <p>Apellido:</p>
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" required>
+
+                <p>E-mail:</p>
+                <label for="email"></label>
+                <input type="email" name="email" id="email"
+                    pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/">
+
+                <p>Tel:</p>
+                <!--el input me da como la forma de validar mi campo el for es como mi id para el input type.-->
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" min="8" max="15">
+                <br><br>
+                <label id="sexo" for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="noBinario">No Binario</option>
+                </select><br><br>
+
+                <legend><b>Consulta:</b></legend>
+                <br>
+                <label for="obs"></label>
+                <textarea name="obs" id="obs" cols="40" rows="10" placeholder="..."></textarea>
+<!--el fieldset funsiona para recuadrar el formulario-->
+            </fieldset> <br>
+            <!--en enviar tendria que mandar la info en un servidor-->
+            <button type="submit" onclick='return enviarFormulario()' value = 'Enviar'><b>Enviar</b></button><br><br>
+            </form>
+            <div id="error"></div>
+            
+           
+        </div>
+    </section>
+    <br><br>
+    <footer>
+
+        <div id="datos">
+            <p><b>Tel:</b> 011 3949-3050</p>
+            <p><b>Direccion: </b>Av. Corrientes 1234</p>
+            <p>Terminos y condiciones</p>
+            <p>Politicas de privacidad</p>
+        </div>
+        <div id="botonera_principal2">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+<div class="social">
+     <!-- <i class="fa-solid fa-cubes" style="color: blue;"></i> -->
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-github"></i>
+</div>
+       
+</footer>
+    </footer>
+    <script src="../script/scriptContac.js"></script>
+    <script src="https://kit.fontawesome.com/554634bb22.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+</html>

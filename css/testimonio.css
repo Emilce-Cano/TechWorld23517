@@ -1,0 +1,268 @@
+body {
+    background-image: url(../img/Rectangle\ 8.png);
+    margin: 0;
+    background-color: #fff;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0556B5;
+    height: 200px;
+}
+
+#title {
+    color: #FFF;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo {
+    width: 130px;
+    height: 130px;
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la imagen del logo */
+    margin-right: 30px;
+}
+
+#botonera_principal {
+    margin: 0 auto;
+    padding: 0 1em;
+    border-bottom: 0px solid #57CAE3;
+}
+
+@media screen and(min-width: 52em) {
+    #botonera_principal {
+        max-width: 100em;
+    }
+}
+
+/* fin media */
+
+.menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+}
+
+
+
+#botonera_principal ul {
+    background: #57CAE3;
+    list-style-type: none;
+    /* Quita los marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+
+#botonera_principal ul a {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8em 5em;
+}
+
+#botonera_principal ul li a {
+    display: block;
+
+}
+
+#botonera_principal ul li a:hover {
+    color: #FFF;
+    background-color: rgb(8, 115, 202);
+}
+
+
+
+
+/* iniciamos el flexbox */
+
+#botonera_principal ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#botonera_principal li {
+    flex: 1 0 auto;
+    text-align: center;
+
+}
+nav ul {
+    /* quita los marcadores alñ costado de los navegadores */
+    list-style: none; 
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background-color: #0556B5;
+    justify-content: space-between;
+}
+
+#datos {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    flex: 1;
+    color: #FFF;
+    width: 300px;
+    height: 141px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+}
+
+#botonera_principal2 {
+    flex: 1;
+    /* float: right; */
+    width: 0px;
+    height: 280px;
+    margin-top: 50px;
+
+}
+
+#botonera_principal2 nav ul li a {
+    color: #FFF;
+    font-family: 'Copse', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+nav ul {
+    /* quita los marcadores alñ costado de los navegadores */
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+.social {
+    flex: 1;
+    color: #ccc;
+    font-size: 50px;
+}
+
+@media screen and(min-width: 52em) {
+    #botonera_principal {
+        max-width: 52em;
+    }
+}
+
+/* se inicia con flexbox */
+#botonera_principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.graduados{
+    padding: 2%;
+    height: 55%;
+    margin: 0;
+}
+
+.titulo_testimonios{
+    text-align: center;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.titulo_testimonios h2{
+    color:#2e64a1;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 1% 0;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+.titulo_testimonios p{
+    font-size: 20px;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.personas{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    min-height: 60%;
+}
+
+.persona{
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    width: 18%;
+    text-align: center;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.persona p{
+    line-height: 90%;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.persona img{
+    border-radius: 50%;
+    width: 58%;
+    box-shadow: 0 0 2px black;
+}
+
+.persona h5,
+.persona h6{
+    margin:0;
+    color:#2e64a1;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-weight: bold;
+    font-size: 110%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.persona h6{
+    font-size: 90%;
+    font-style: italic;
+    margin:5px;
+}
