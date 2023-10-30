@@ -4,29 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styleHome.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/testimonios.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../icos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../icos/favicon-16x16.png">
 
 </head>
 <body>
     <header>
-        <img id="logo" src="../img/Logo.png" alt="logo">
+        <img id="logo" src="img/logo.jpg" alt="logo">
         <h1 id="title">TEACH WORLD</h1>
     </header>
         <nav id="botonera_principal">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                
                 <li><a href="#">Cursos</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="testimoniosdos.html">Testimonios</a></li>
                
                 <li><a href="/pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
-<section>
-
-</section>
+        <main>
+            <section id="cursos" class="seccion-cursos">
+                <h2 class="seccion-titulo">Oferta Académica</h2>
+                <h3>Cursos Destacados</h3>
+              <!--Galeria de Cursos-->
+                <div class="container cursos-galeria-contenedor">
+                  <div class="contenedor-cursos">
+                    <!--Curso 1-->
+                    <div class="container-curso">
+                      <div class="curso">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/proyecto1.png" alt="Curso 1 - UX UI"></a>
+                        <div class="overlay">
+                          <p>UX/UI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Curso 2-->
+                    <div class="container-curso">
+                      <div class="curso">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/proyecto2.png" alt="Curso 2 - Data Science"></a>
+                        <div class="overlay">
+                          <p>Data Science</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Curso 3-->
+                    <div class="container-curso">
+                      <div class="curso">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/proyecto3.png" alt="Curso 3 - Digital Marketing"></a>
+                        <div class="overlay">
+                          <p>Digital Marketing</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Curso 4-->
+                    <div class="container-curso">
+                      <div class="curso">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/proyecto4.png" alt="Curso 4 - Full Stack Developer"></a>
+                        <div class="overlay">
+                          <p>Full Stack Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-button">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="button">
+                        <span>Ver más cursos</span>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                    </a>
+                </div>
+              </section>
+        </main>
 <footer>
 
     <div id="datos">
@@ -62,7 +118,5 @@
 <script src="../script/scriptContac.js"></script>
 <script src="https://kit.fontawesome.com/554634bb22.js" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-</body>
-
 </body>
 </html>
