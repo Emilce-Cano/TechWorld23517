@@ -189,8 +189,8 @@ button:hover {
 }
 
 #error{
-    color: rgb(224, 15, 15);
-    font-size: 25px;
+    color: rgb(236, 12, 12);
+    font-size: 35px;
 }
 .mapa {
     /* display: flex; */
@@ -232,7 +232,6 @@ footer {
     margin-bottom: 100px;
 }
 
-
 #botonera_principal2 {
     flex: 1;
     /* float: right; */
@@ -250,7 +249,7 @@ footer {
 }
 
 nav ul {
-    /* quita los marcadores al costado de los navegadores */
+    /* quita los marcadores alñ costado de los navegadores */
     list-style: none;
     margin-bottom: 100px;
 }
@@ -403,7 +402,7 @@ nav ul {
         display: block;
         width: 90%;
         height: auto;
-        text-align: center;
+        item-align: center;
     }
     
     #title {
