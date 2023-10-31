@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-image: url(/img/Rectangle\ 8.png);
+    background-size: cover;
 }
 
 header{
@@ -202,7 +204,11 @@ nav ul {
 .social {
     flex: 1;
     color: #ccc;
-    font-size: 50px;
+    font-size: 100px;
+}
+
+.fa-brands {
+    padding-right: 10px;
 }
 
 /* footer {

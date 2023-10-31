@@ -1,84 +1,115 @@
 body {
-    background-image: url(../img/Rectangle\ 8.png);
+    background-image: url(/img/Rectangle\ 8.png)!important;
     margin: 0;
-    background-color: #fff;
+    /*background-color: #fff;*/
     background-size: cover;
 }
 
 header {
     display: flex;
-    padding: 20px;
+    padding: 0.1%;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     background-color: #0556B5;
-    height: 200px;
+    height: 5%;
+    box-sizing: border-box;
+    height: 150px;
 }
 
 #title {
     color: #FFF;
     font-family: 'Fugaz One', sans-serif;
-    font-size: 5rem;
+    font-size: 250%;
     font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
 
-#logo {
+/* #logo {
     width: 130px;
     height: 130px;
     max-width: 100%;
-    /* Ajusta el ancho máximo de la imagen del logo */
+    Ajusta el ancho máximo de la imagen del logo 
     margin-right: 30px;
-}
+} */
 
+#logo {
+    
+    width: 100px;
+    height: 100px;
+    /* float: left; */
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen del logo */
+    margin-right: 15px;
+    /* display: inline-block; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+}
 
 #botonera_principal {
-    margin: 0 auto;
-    padding: 0 1em;
-    border-bottom: 0px solid #57CAE3;
+    display: flex;
+    background-color:#57CAE3;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    height: 5%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    
 }
 
-@media screen and(min-width: 52em) {
-    #botonera_principal {
-        max-width: 100em;
-    }
+#botonera_principal div{
+    width: 100%;
 }
 
-/* fin media */
-
-.menu-section {
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-
-}
 
 
 
 #botonera_principal ul {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     background: #57CAE3;
     list-style-type: none;
     /* Quita los marcadores de lista */
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
+#botonera_principal li{
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    text-align: center;
 
-#botonera_principal ul a {
+} 
+
+
+#botonera_principal  a {
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 160%;
     color: #FFF;
     font-weight: bold;
     text-decoration: none;
-    padding: 0.8em 5em;
+    width: 100%;
+    /* padding: 0.8em 5em; */
 }
 
-#botonera_principal ul li a {
+/* #botonera_principal ul li a {
     display: block;
 
+} */
+
+#botonera_principal ul li:hover {
+    color: #FFF;
+    background-color: rgb(8, 115, 202);
+    cursor: pointer;
 }
 
 #botonera_principal ul li a:hover {
@@ -91,7 +122,7 @@ header {
 
 /* iniciamos el flexbox */
 
-#botonera_principal ul {
+/* #botonera_principal ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -102,6 +133,117 @@ header {
     text-align: center;
 
 }
+nav ul {
+
+    list-style: none; 
+    margin-bottom: 100px;
+}
+ */
+
+
+
+     /* COMIENZA FOOTER */
+
+footer{
+    background-color: #0556B5;
+    width: 100%;
+    /* height: 5%; */
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#datos{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    width: 25%;
+    margin-top: 0.1%;
+    margin-bottom: 0.1%;
+    box-sizing: border-box;
+}
+
+#datos p{
+    color: #FFF;
+    width: 100%;
+    font-size: 90%;
+    margin: 0;
+}
+
+#botonera_principal2{
+    display: inline-flex;
+    justify-content: center;
+    width: 25%;
+    margin-top: 0;
+    /* margin-left: 3%; */
+    height: 0.1%;
+    box-sizing: border-box;
+  
+}
+
+#botonera_principal2 nav{
+    display: inline-flex;
+} 
+
+#botonera_principal2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#botonera_principal2 li{
+    margin-top: 2%;
+}
+
+#botonera_principal2 a {
+    color: #FFF;
+    font-family: 'Copse', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 130%;
+    text-decoration: none;
+}
+
+.social{
+    font-size: 50px;
+    color: #FFF;
+    display: inline-flex;
+    /* justify-content: center; */
+    /* width: 35%; */
+    margin-left: 5%;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.social div{
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 5%; */
+    /* width: 100%; */
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.social a{
+    display: block;
+    margin-right: 6%;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 150%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.social a:hover{
+    cursor: pointer;
+}
+
 
 #formulario_contacto {
     padding: 10px;
@@ -176,9 +318,11 @@ button {
     border: 1px solid #1d7ce9;
     font-size: 25px;
     border-radius: 10px;
-    width: 250px;
+    width: 100px;
     height: 50px;
-    margin-left: 50%;
+    margin: 0;
+    margin-left: 50px;
+    justify-content: center;
     /*  para alinearlo al centro */
     cursor: pointer;
 
@@ -215,69 +359,9 @@ button:hover {
     height: 700px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-
-    height: 350px;
-    background-color: #0556B5;
-    justify-content: space-between;
+.fa-brands {
+    padding-right: 10px;
 }
-
-#datos {
-    flex: 1;
-    color: #FFF;
-    width: 300px;
-    height: 141px;
-    padding-left: 30px;
-    margin-bottom: 100px;
-}
-
-#botonera_principal2 {
-    flex: 1;
-    /* float: right; */
-    width: 0px;
-    height: 280px;
-    margin-top: 50px;
-
-}
-
-#botonera_principal2 nav ul li a {
-    color: #FFF;
-    font-family: 'Copse', serif;
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-}
-
-
-nav ul {
-    /* quita los marcadores alñ costado de los navegadores */
-    list-style: none;
-    margin-bottom: 100px;
-}
-
-.social {
-    flex: 1;
-    color: #ccc;
-    font-size: 50px;
-}
-
-@media screen and(min-width: 52em) {
-    #botonera_principal {
-        max-width: 52em;
-    }
-}
-
-/* se inicia con flexbox */
-#botonera_principal ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-
 
 
 
@@ -356,38 +440,11 @@ height: 30px;
         margin-top: 0px;
     }
 
+    .fa-brands {
+        padding-right: 10px;
+    }
     /* Ajustes para footer */
-    footer {
-        margin-top: auto;
-        display: flex;
-        padding: 10px;
-    }
-
-    #datos {
-        width: 300px;
-        height: 141px;
-        padding-left: 30px;
-        margin-bottom: 100px;
-    }
-
-    #botonera_principal2 {
-        float: right;
-        width: 0px;
-        height: 280px;
-        margin-top: 50px;
-    }
-
-    #botonera_principal2 nav ul li a {
-        font-size: 30px;
-    }
-
-    nav ul {
-        margin-bottom: 100px;
-    }
-
-    .social {
-        font-size: 50px;
-    }
+   
 }
 
 /* fin de media tablet */
@@ -400,21 +457,29 @@ height: 30px;
 
 
 
-
-
 /* Empieza media mobil */
 @media all and (max-width: 599px) {
+
+    body {
+        
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+    }
     header {
         display: block;
-        width: 90%;
+        width: 100%;
+        padding: 10px;
         height: auto;
-        item-align: center;
+        text-align: center;
+        align-items: center;
+        box-sizing: content-box;
     }
     
     #title {
         width: 90%;
        font-size: 15px;
-        margin: 0;
+        margin-left: 30px;
         padding: 0;
         box-sizing: border-box;
         background-position: center
@@ -424,7 +489,7 @@ height: 30px;
     #logo {
         width: 10%;
         height: auto;
-        margin: 0;
+        margin-left: 30px;
         box-sizing: border-box;
         background-position: center
     }
@@ -433,7 +498,8 @@ height: 30px;
         width:100%;
         height:auto;
         float:none;
-        margin: 20px;
+        margin: 0;
+        padding: 0;
         
        
     }
@@ -447,8 +513,7 @@ height: 30px;
     
     
     
-    #botonera_principal ul {
-        
+    #botonera_principal ul {    
     float:none;
         padding: 0;
         margin: 0;
@@ -473,7 +538,7 @@ height: 30px;
     /* iniciamos el flexbox */
     
     #botonera_principal ul {
-        display: flex;
+        display: block;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -484,17 +549,15 @@ height: 30px;
     
     }
     
-    #formulario_contacto {
-        padding: 10px;
-    }
+    
     
     h1 {
-        font-size: 35px;
+        font-size: 25px;
         
     }
     
     #datos_personales {
-        font-size: 30px;
+        font-size: 20px;
         
     }
     
@@ -504,7 +567,7 @@ height: 30px;
     }
     
     fieldset {
-        max-width: 45%;
+        max-width: 100%;
        
         /* Establece un borde claro */
         padding: 10px;
@@ -513,18 +576,18 @@ height: 30px;
     
     input {
         width: 100%;
-        height: 40px;
-        font-size: 25px;
+        height: 20px;
+        font-size: 20px;
     }
     
     legend {
        
-        font-size: 30px;
+        font-size: 20px;
         
     }
     
     #sexo {
-        font-size: 25px;
+        font-size: 15px;
        
     }
     
@@ -532,7 +595,7 @@ height: 30px;
     textarea {
         width: 90%;
         height: 150xp;
-        font-size: 25px;
+        font-size: 20px;
         
         
         padding: 5px;
@@ -542,15 +605,14 @@ height: 30px;
     
     
     button {
-        
-        font-size: 25px;
+        margin-left: 40%;
+        font-size: 15px;
         border-radius: 10px;
-        width: 250px;
-        height: 50px;
-        margin-left: 50%;
+        width: 100px;
+        height: 30px;
+        
         /*  para alinearlo al centro */
         cursor: pointer;
-    
     }
     
   
@@ -562,25 +624,23 @@ height: 30px;
         float: right;
         box-sizing: border-box;
         padding: 20px;
-        width: 50%;
+        width: 100%;
         margin-top: 90px;
     }
     
     #mapa legend {
         margin-bottom: 30px;
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'Copse', serif;
-        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+
     }
     
     #map {
-        width: 900px;
-        height: 700px;
+        width: 400px;
+        height: 400px;
     }
     
     footer {
-        display: flex;
+        display: block;
         align-items: center;
     
         height: 350px;
@@ -591,38 +651,48 @@ height: 30px;
     #datos {
         flex: 1;
         color: #FFF;
-        width: 300px;
-        height: 141px;
+        width: 100%;
+        height: auto;
+        margin: 0;
         padding-left: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 2%;
     }
     
     #botonera_principal2 {
+        padding-left: 30px;
+        justify-content: start;
         flex: 1;
+        text-align: start;
         /* float: right; */
-        width: 0px;
-        height: 280px;
-        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 2%;
     
     }
     
     #botonera_principal2 nav ul li a {
-        color: #FFF;
-        font-family: 'Copse', serif;
-        font-family: 'Inter', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
     }
     
     nav ul {
         /* quita los marcadores alñ costado de los navegadores */
         list-style: none;
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
     
     .social {
         flex: 1;
         color: #ccc;
         font-size: 50px;
+    }
+    .fa-brands {
+        padding-right: 10px;
+    }
+
+    .fa-brands:hover {
+        color: #fff;
+
     }
     
     @media screen and(min-width: 52em) {
@@ -633,9 +703,9 @@ height: 30px;
     
     /* se inicia con flexbox */
     #botonera_principal ul {
-        display: flex;
+        display: block;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: normal;
     }
     
     
